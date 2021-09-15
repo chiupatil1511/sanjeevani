@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h3>Welcome Sir/Ma'am,<br>You Have Registered Successfully.</h3>
+
+<h4>Appoinment Details</h4>
+ <p>Date: <span id="date"></span></p>
+<script>
+var dt1 = new Date();
+dt1.setDate(dt1.getDate() +2);
+document.getElementById("date").innerHTML = dt1.toLocaleDateString();
+</script>
+
+<p>Time: <span id="time"></span></p>
+<script>
+var dt = new Date();
+dt.setHours(dt.getHours() +4);
+dt.setMinutes(dt.getMinutes() -dt.getMinutes());
+dt.setSeconds(dt.getSeconds() -dt.getSeconds());
+document.getElementById("time").innerHTML =dt.toLocaleTimeString();
+</script>
+</center>
+</body>
+</html>

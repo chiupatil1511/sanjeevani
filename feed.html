@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>My Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('doctor.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+
+</head>
+<body>
+<div class="topnav">
+  <a  href="home.html">Home</a>
+  <a href="reg.html">Registration</a>
+  <a href="abt.html">About</a>
+<a class="active" href="feed.html">Feedback</a>
+</div>
+
+<div class="container">
+<center>
+  <form action="/action_page.php"><br><br><br><br>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+
+    <label for="feedback">FeedBack</label>
+    <textarea id="feedback" name="feedback" placeholder="Write something.." style="height:200px"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</center>
+</div>
+ 
+</body>
+</html>
